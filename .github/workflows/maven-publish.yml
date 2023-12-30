@@ -12,13 +12,14 @@ on:
 
 jobs:
   build:
-    environment: Dev
 
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
 
+    env:
+      AZURE_COSMOS_ENDPOINT: ${{ vars.AZURE_COSMOS_ENDPOINT }}
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17
