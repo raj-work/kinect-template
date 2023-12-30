@@ -2,6 +2,6 @@ spring:
   cloud:
     azure:
       cosmos:
-        endpoint: ${AZURE-COSMOS-ENDPOINT}
-        key: ${AZURE-COSMOS-KEY}
-        database: ${AZURE-COSMOS-DB-NAME}
+        endpoint: ${AZURE_COSMOS_ENDPOINT}
+        key: ${AZURE_COSMOS_KEY}
+        database: ${AZURE_COSMOS_DB_NAME}
