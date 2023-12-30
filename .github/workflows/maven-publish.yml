@@ -20,6 +20,8 @@ jobs:
 
     env:
       AZURE_COSMOS_ENDPOINT: ${{ vars.AZURE_COSMOS_ENDPOINT }}
+      AZURE_COSMOS_DB_NAME: ${{ vars.AZURE_COSMOS_DB_NAME }}
+      AZURE_COSMOS_KEY: ${{ vars.AZURE_COSMOS_KEY }}
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17
